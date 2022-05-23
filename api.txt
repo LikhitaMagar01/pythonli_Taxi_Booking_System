@@ -1,0 +1,15 @@
+composer create-project laravel/laravel example-app
+
+cd example-app
+
+php artisan serve
+
+php artisan make:migration create_photos_table
+
+php artisan migrate
+
+php artisan make:controller PhotoController
+
+
+
+(in .env: change database info: )
