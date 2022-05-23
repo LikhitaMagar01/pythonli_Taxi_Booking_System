@@ -1,0 +1,10 @@
+return MultiProvider(
+      providers: [
+      //TODO ADD Changenotifierprocider<userdao> here
+      Provider<MessageDao>(
+        lazy = false,
+        create: (_) =>MessageDao(),
+      ),
+    ],
+    //child: 
+    );
